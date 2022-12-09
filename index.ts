@@ -8,7 +8,7 @@ const client = new Client({
 });
 
 client.on('ready', () => {
-    console.log(`🔗 Connecté sur le compte de ${client.user!.tag} !\n`);
+    console.log(`🔗 Logged in as ${client.user!.tag}`);
 });
 
 client.on('interactionCreate', async (interaction) => {
