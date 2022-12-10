@@ -21,6 +21,10 @@ const commands = [
                 autocomplete: true
             }
         ]
+    },
+    {
+        name: 'give-up',
+        description: 'Give up on your chess game'
     }
 ];
 

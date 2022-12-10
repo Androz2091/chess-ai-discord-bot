@@ -159,6 +159,16 @@ client.on('interactionCreate', async (interaction) => {
 
     }
 
+    if (interaction.isCommand() && interaction.commandName === 'give-up') {
+
+        const game = games.get(interaction.user.id);
+        if (!game) return interaction.reply({ content: 'You must start a game before using /give-up.', ephemeral: true });
+
+        games.delete(interaction.user.id);
+        interaction.reply({ content: 'Game cancelled.', ephemeral: true });
+
+    }
+
 });
 
 client.login(process.env.BOT_TOKEN);
