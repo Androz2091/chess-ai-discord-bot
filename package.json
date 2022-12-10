@@ -2,10 +2,16 @@
   "name": "chess-ai-discord-bot",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
   "repository": "https://github.com/Androz2091/chess-ai-discord-bot.git",
   "author": "Androz2091 <androz2091@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "chess-ai": "^0.0.2",
+    "chess-image-generator": "^1.0.9",
+    "chess.js": "^1.0.0-alpha.0",
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3"
   }
